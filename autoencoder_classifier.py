@@ -89,7 +89,7 @@ def fit_model(params):
             yield (X, {"autoencoder": X, "classifier_out": y})
 
     model_check = ModelCheckpoint(params.checkpoint, 
-                                monitor='val_loss', 
+                                monitor='classifier_out_acc', 
                                 verbose=0, 
                                 save_best_only=True, 
                                 save_weights_only=False)

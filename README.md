@@ -24,7 +24,8 @@ To use the autoencoder classifier, make sure to do the following steps:
 1.  Download [CIFAR10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
 and extract it in the local directory
 ```bash
-tar xvzf cifar-10-python.tar.gz -C /path/to/cloned/directory
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+tar xvzf cifar-10-python.tar.gz -C ./
 ```
 2. Transform the batch files to images
 ```bash
